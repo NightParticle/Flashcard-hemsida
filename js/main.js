@@ -1,4 +1,8 @@
 "use strict";
 
-let message = "Hello there!";
-alert(message);
+let flashCards = [[]];
+
+// Adds front and back text to flashCards list
+function addCard(front, back) {
+  flashCards.push([front, back]);
+}
