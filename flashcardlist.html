@@ -7,19 +7,34 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/main.js"></script>
+    <script src="js/list.js" async></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flashcards</title>
   </head>
-  <body>
+  <body onload="LoadCollections()">
     <nav>
       <a href="flashcardlist.html">Collections</a>
       <a href="login.html">Login</a>
     </nav>
     <main>
-      <h2>Flashcards</h2>
-      <a class="main-button" href="create.html">CREATE DECK</a>
+      <div id="white-list">
+        <h3>Your flashcard collections</h3>
+
+        <div id="new-collection">
+          <form class="new-collection">
+            <input
+              type="text"
+              id="collection-name"
+              placeholder="Collection name"
+              autocomplete="false"
+            />
+            <button onclick="return NewCollection()">
+              Create new collection
+            </button>
+          </form>
+        </div>
+      </div>
     </main>
   </body>
 </html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/main.js" async></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcards</title>
+  </head>
+  <body>
+    <nav>
+      <a href="flashcardlist.html">Collections</a>
+      <a href="login.html">Login</a>
+    </nav>
+    <main>
+      <div class="login">
+        <form class="account">
+          <input
+            id="create-username"
+            type="text"
+            placeholder="Username"
+            autocomplete="off"
+          />
+          <input id="create-password" type="password" placeholder="Password" />
+          <input
+            id="confirm-password"
+            type="password"
+            placeholder="Confirm password"
+          />
+          <button id="create" onclick="return CreateAccount()">
+            Create account
+          </button>
+          <p id="create-error-msg"></p>
+          <p>Already have an account? <a href="login.html">Login</a></p>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

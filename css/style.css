@@ -19,13 +19,25 @@ h2 {
   font-size: 8vw;
 }
 
+h3 {
+  color: var(grey);
+  text-align: center;
+  font-size: 4vw;
+  padding-top: 30px;
+}
+
 nav {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
 }
 
-a {
+input,
+button {
+  border: none;
+}
+
+nav a {
   margin-top: 5vh;
   color: var(--white);
   text-decoration: none;
@@ -48,4 +60,185 @@ a {
 .main-button:hover {
   transform: scale(1.1);
   box-shadow: 5px 5px grey;
+}
+/*
+  Account creation (and login) css
+*/
+.login {
+  width: 360px;
+  margin: auto;
+  margin-top: 10%;
+}
+
+.account {
+  z-index: 1;
+  background-color: var(--white);
+  position: relative;
+  padding: 15%;
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 10px 10px rgba(78, 78, 78, 0.5);
+}
+
+.account input {
+  margin: 15px;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+  border-radius: 50px;
+  padding: 20px;
+  outline: none;
+  border-color: var(--lgreen);
+}
+
+.account button {
+  font-family: "Nunito", sans-serif;
+  background-color: var(--lgreen);
+  outline: none;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 30px;
+  padding-right: 20%;
+  padding-left: 20%;
+}
+
+#create-error-msg,
+#login-error-msg {
+  color: red;
+}
+
+/*
+Flashcard list thing
+*/
+#white-list {
+  background-color: var(--white);
+  margin-left: 8vw;
+  margin-right: 8vw;
+  border-radius: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+.flashcard-collection {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--lgreen);
+  border-radius: 45px;
+  margin: 20px;
+  margin-left: 50px;
+  margin-right: 50px;
+  padding: 20px;
+  transition: ease 0.3s;
+}
+
+.flashcard-collection:hover {
+  transform: scale(1.02);
+}
+
+.flashcard-collection h4 {
+  color: black;
+  margin-left: 10px;
+}
+
+.flashcard-collection a {
+  background-color: var(--dgreen);
+  border-radius: 10px;
+  padding: 10px;
+  padding-left: 2vw;
+  padding-right: 2vw;
+  margin-right: 2vw;
+  color: var(--white);
+  text-decoration: none;
+}
+
+#new-collection {
+  text-align: center;
+  align-items: center;
+}
+
+#new-collection button {
+  font-family: "Nunito", sans-serif;
+  color: var(--white);
+  background: rgb(204, 204, 204);
+  outline: none;
+  padding: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  border-radius: 30px;
+  padding-right: 10%;
+  padding-left: 10%;
+  border: none;
+}
+
+#collection-name {
+  margin: 15px;
+  font-family: "Nunito", sans-serif;
+  box-sizing: border-box;
+  border-radius: 50px;
+  padding: 20px;
+  outline: none;
+  border-color: var(--lgreen);
+  border: none;
+}
+
+/*
+edit css
+*/
+#edit {
+  background-color: var(--white);
+  margin-left: 8vw;
+  margin-right: 8vw;
+  border-radius: 50px;
+  padding-bottom: 20px;
+  margin-bottom: 50px;
+}
+
+#cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+#cards div {
+  background-color: var(--blue);
+  color: var(--white);
+  padding: 2%;
+  padding-left: 3%;
+  margin: 10px;
+  padding-right: 3%;
+  border-radius: 15px;
+  transition: ease 0.4s;
+  margin-left: 60px;
+}
+
+#cards div:hover,
+#add-card:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+}
+
+#edit-front,
+#edit-back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#edit-front textarea,
+#edit textarea {
+  background-color: white;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+  padding: 20px;
+  resize: none;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 60%;
 }

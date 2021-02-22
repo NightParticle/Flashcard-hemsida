@@ -7,7 +7,7 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/main.js"></script>
+    <script src="js/login.js" async></script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Flashcards</title>
@@ -18,8 +18,20 @@
       <a href="login.html">Login</a>
     </nav>
     <main>
-      <h2>Flashcards</h2>
-      <a class="main-button" href="create.html">CREATE DECK</a>
+      <div class="login">
+        <form class="account">
+          <input
+            id="username"
+            type="text"
+            placeholder="Username"
+            autocomplete="off"
+          />
+          <input id="password" type="password" placeholder="Password" />
+          <button id="login" onclick="return Login()">Login</button>
+          <p id="login-error-msg"></p>
+          <p>New user? <a href="createaccount.html">Create account</a></p>
+        </form>
+      </div>
     </main>
   </body>
 </html>

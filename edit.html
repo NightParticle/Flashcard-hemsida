@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/edit.js" async></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcards</title>
+  </head>
+  <body onload="LoadCollections()">
+    <nav>
+      <a href="flashcardlist.html">Collections</a>
+      <a href="login.html">Login</a>
+    </nav>
+    <main>
+      <div id="edit">
+        <h3>Cards</h3>
+        <div id="cards">
+          <div id="add-card">
+            <p>Add card</p>
+          </div>
+          <div>
+            <p>1</p>
+          </div>
+          <div>
+            <p>2</p>
+          </div>
+          <div>
+            <p>3</p>
+          </div>
+        </div>
+        <div id="edit-front">
+          <p>Front</p>
+          <textarea
+            name="front"
+            id="front-input"
+            cols="80"
+            rows="10"
+          ></textarea>
+        </div>
+        <div id="edit-back">
+          <p>Back</p>
+          <textarea name="back" id="back-input" cols="80" rows="10"></textarea>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
