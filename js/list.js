@@ -44,7 +44,7 @@ function CreateCollection(index) {
     h4.innerHTML +
     `</h4>` +
     `<div><a href="">Study</a>
-  <a href="">Edit</a></div>`;
+  <a href="edit.html">Edit</a></div>`;
   document.getElementById("white-list").appendChild(div);
 }
 

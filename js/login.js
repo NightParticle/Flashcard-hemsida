@@ -25,7 +25,7 @@ function Login() {
         users[userIndex].password == document.getElementById("password").value
       ) {
         localStorage.setItem("userIndex", JSON.stringify(userIndex));
-        alert("nice");
+        window.location.href = "/flashcardlist.html";
       } else {
         document.getElementById("login-error-msg").innerHTML =
           "Incorrect password";
