@@ -45,8 +45,10 @@ nav a {
 
 .main-button {
   display: flex;
+  color: white;
   font-size: 18px;
   flex-direction: row;
+  text-decoration: none;
   background-color: var(--lgreen);
   padding: 2vw;
   border-radius: 50px;
@@ -194,6 +196,7 @@ edit css
   border-radius: 50px;
   padding-bottom: 20px;
   margin-bottom: 50px;
+  text-align: center;
 }
 
 #cards {
@@ -226,6 +229,7 @@ edit css
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 20px;
 }
 
 #edit-front textarea,
@@ -241,4 +245,64 @@ edit css
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   width: 60%;
+  margin: 10px;
+}
+
+#back {
+  color: var(--white);
+  background-color: var(--dgreen);
+  padding: 10px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-bottom: 500px;
+}
+
+/*
+view css
+*/
+
+#view {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+#view h3 {
+  color: white;
+}
+
+#view h4 {
+  text-align: center;
+  font-size: 28px;
+  color: white;
+}
+#view p {
+  color: white;
+  margin-left: 20vw;
+  margin-right: 20vw;
+  background-color: var(--dgreen);
+  border-radius: 30px;
+  padding: 20px;
+  min-height: 300px;
+}
+
+#view button {
+  margin: 20px;
+  font-size: 20px;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 42vw;
+  margin-left: 42vw;
+}
+
+#view a {
+  color: var(--white);
+  text-align: center;
+  background-color: var(--dgreen);
+  padding: 30px;
+  border-radius: 10px;
+  text-decoration: none;
+  margin-bottom: 500px;
+  margin-right: 35vw;
+  margin-left: 35vw;
 }

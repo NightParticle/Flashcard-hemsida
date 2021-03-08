@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/view.js" async></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flashcards</title>
+  </head>
+  <body>
+    <nav>
+      <a href="flashcardlist.html">Collections</a>
+      <a href="login.html">Login</a>
+    </nav>
+    <main>
+      <div id="view">
+        <h3>Study</h3>
+        <h4 id="p-side">Front</h4>
+        <p id="content"></p>
+        <button id="turn" onclick="return TurnCard()">Turn card</button>
+        <button id="next" onclick="return NextCard()">Next card</button>
+        <a href="flashcardlist.html">Go back</a>
+      </div>
+    </main>
+  </body>
+</html>

@@ -5,7 +5,6 @@ let tempUsers = JSON.parse(localStorage.getItem("users"));
 let tempCards =
   tempUsers[JSON.parse(localStorage.getItem("userIndex"))].collections;
 let cardIndex;
-let removeCards = true;
 
 document.getElementById("add-card").addEventListener("click", function () {
   let newCard = {
